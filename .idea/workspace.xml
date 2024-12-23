@@ -5,16 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9715f97-ab5d-474f-96c8-2f3cd302e714" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/javacode/wallet/WalletServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/javacode/wallet/Wallet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javacode/wallet/Wallet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/javacode/wallet/WalletController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javacode/wallet/WalletController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/javacode/wallet/WalletDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javacode/wallet/WalletDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/javacode/wallet/WalletRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javacode/wallet/WalletRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/javacode/wallet/WalletService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javacode/wallet/WalletService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/javacode/wallet/WalletServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javacode/wallet/WalletServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/changelog/changeset/create-wallet-table.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/changeset/create-wallet-table.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/javacode/wallet/WalletControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/javacode/wallet/WalletControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/javacode/wallet/WalletServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/javacode/wallet/WalletServiceImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,9 +42,20 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.MainServerApp.executor": "Run",
+    "JUnit.All in test_task (1).executor": "Coverage",
+    "JUnit.All in test_task (2).executor": "Coverage",
     "JUnit.All in test_task.executor": "Coverage",
     "JUnit.WalletControllerTest.executor": "Run",
+    "JUnit.WalletControllerTest.getById_whenInvoked_thenStatusOkAndReturnWallet.executor": "Run",
+    "JUnit.WalletControllerTest.getById_whenNotFoundById_thenStatusNotFound.executor": "Run",
     "JUnit.WalletControllerTest.getWalletById_whenInvoked_thenStatusOkAndReturnWallet.executor": "Run",
+    "JUnit.WalletControllerTest.save_whenInvalidWalletType_thenBadRequest.executor": "Run",
+    "JUnit.WalletServiceImplTest.executor": "Run",
+    "JUnit.WalletServiceImplTest.save_whenDepositWalletType_thenStatusOkAndReturnWalletPlus100Amount.executor": "Run",
+    "JUnit.WalletServiceImplTest.save_whenInvalidId_thenThrowsNotFoundException.executor": "Run",
+    "JUnit.WalletServiceImplTest.save_whenOk_thenReturnWallet.executor": "Run",
+    "JUnit.WalletServiceImplTest.save_whenWithdrawMoreAmount_thenThrowsInsufficientFundsException.executor": "Run",
+    "JUnit.WalletServiceImplTest.save_whenWithdrawWalletType_thenWalletAmountBecomeMinus100.executor": "Run",
     "Maven.test_task [install].executor": "Run",
     "Maven.test_task [package].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -73,21 +81,8 @@
       <recent name="C:\Users\leort\IdeaProjects\test_task\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in test_task">
-    <configuration name="MainServerApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javacode.error.MainServerApp" />
-      <module name="test_task" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="javacode.error.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="All in test_task" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.All in test_task (2)">
+    <configuration name="All in test_task (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test_task" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
@@ -95,22 +90,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WalletControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in test_task (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test_task" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="javacode.wallet.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="javacode.wallet" />
-      <option name="MAIN_CLASS_NAME" value="javacode.wallet.WalletControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WalletControllerTest.getWalletById_whenInvoked_thenStatusOkAndReturnWallet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WalletControllerTest.getById_whenInvoked_thenStatusOkAndReturnWallet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test_task" />
       <extension name="coverage">
         <pattern>
@@ -120,7 +108,39 @@
       </extension>
       <option name="PACKAGE_NAME" value="javacode.wallet" />
       <option name="MAIN_CLASS_NAME" value="javacode.wallet.WalletControllerTest" />
-      <option name="METHOD_NAME" value="getWalletById_whenInvoked_thenStatusOkAndReturnWallet" />
+      <option name="METHOD_NAME" value="getById_whenInvoked_thenStatusOkAndReturnWallet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WalletControllerTest.getById_whenNotFoundById_thenStatusNotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test_task" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javacode.wallet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="javacode.wallet" />
+      <option name="MAIN_CLASS_NAME" value="javacode.wallet.WalletControllerTest" />
+      <option name="METHOD_NAME" value="getById_whenNotFoundById_thenStatusNotFound" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WalletControllerTest.save_whenInvalidWalletType_thenBadRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test_task" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javacode.wallet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="javacode.wallet" />
+      <option name="MAIN_CLASS_NAME" value="javacode.wallet.WalletControllerTest" />
+      <option name="METHOD_NAME" value="save_whenInvalidWalletType_thenBadRequest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -128,10 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in test_task" />
-        <item itemvalue="JUnit.WalletControllerTest" />
-        <item itemvalue="JUnit.WalletControllerTest.getWalletById_whenInvoked_thenStatusOkAndReturnWallet" />
-        <item itemvalue="Application.MainServerApp" />
+        <item itemvalue="JUnit.All in test_task (2)" />
+        <item itemvalue="JUnit.WalletControllerTest.save_whenInvalidWalletType_thenBadRequest" />
+        <item itemvalue="JUnit.All in test_task (1)" />
+        <item itemvalue="JUnit.WalletControllerTest.getById_whenNotFoundById_thenStatusNotFound" />
+        <item itemvalue="JUnit.WalletControllerTest.getById_whenInvoked_thenStatusOkAndReturnWallet" />
       </list>
     </recent_temporary>
   </component>
@@ -147,6 +168,8 @@
     <servers />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/test_task$All_in_test_task.ic" NAME="All in test_task Coverage Results" MODIFIED="1734961312548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/test_task$All_in_test_task__2_.ic" NAME="All in test_task (2) Coverage Results" MODIFIED="1734982028832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/test_task$All_in_test_task.ic" NAME="All in test_task Coverage Results" MODIFIED="1734981242012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/test_task$All_in_test_task__1_.ic" NAME="All in test_task (1) Coverage Results" MODIFIED="1734981721432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

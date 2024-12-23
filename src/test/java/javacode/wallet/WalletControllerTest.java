@@ -3,6 +3,7 @@ package javacode.wallet;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import javacode.error.InsufficientFundsException;
 import javacode.error.NotFoundException;
+import javacode.error.ValidationException;
 import lombok.SneakyThrows;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -52,7 +53,7 @@ public class WalletControllerTest {
     @SneakyThrows
     @Test
     void getById_whenInvoked_thenStatusOkAndReturnWallet() {
-        when(walletService.getById(walletRequest.walledId())).thenReturn(walletRequest);
+        when(walletService.getById(walletDto.walledId())).thenReturn(walletRequest);
 
         String result = mockMvc.perform(get("/api/v1/wallets/{walletId}", walletDto.walledId())
                         .contentType(MediaType.APPLICATION_JSON))
@@ -70,7 +71,7 @@ public class WalletControllerTest {
     @SneakyThrows
     @Test
     void getById_whenNotFoundById_thenStatusNotFound() {
-        when(walletService.getById(walletRequest.walledId()))
+        when(walletService.getById(walletDto.walledId()))
                 .thenThrow(new NotFoundException(String.format("Wallet by id = %d not found.", anyLong())));
 
         mockMvc.perform(get("/api/v1/wallets/{walletId}", walletDto.walledId())
@@ -121,6 +122,21 @@ public class WalletControllerTest {
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(objectMapper.writeValueAsString(walletDto)))
                 .andExpect(status().isConflict())
+                .andReturn();
+    }
+
+    @SneakyThrows
+    @Test
+    void save_whenInvalidWalletType_thenBadRequest() {
+        WalletDto badDto = WalletDto.builder().walledId(UUID.randomUUID()).amount(100).build();
+
+        when(walletService.save(walletDto))
+                .thenThrow(new ValidationException("Insufficient funds."));
+
+        mockMvc.perform(post("/api/v1/wallet")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(badDto)))
+                .andExpect(status().isBadRequest())
                 .andReturn();
     }
 }

@@ -1,10 +1,10 @@
 package javacode.wallet;
 
+import javacode.error.InsufficientFundsException;
+import javacode.error.NotFoundException;
 import lombok.Data;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import javacode.error.InsufficientFundsException;
-import javacode.error.NotFoundException;
 
 import java.util.UUID;
 
