@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.UUID;
+
 @Slf4j
 @Data
 @RestController
@@ -22,7 +24,7 @@ public class WalletController {
     private final WalletService walletService;
 
     @PostMapping("/wallet")
-    @ResponseStatus(HttpStatus.CREATED)
+    @ResponseStatus(HttpStatus.OK)
     public WalletDto save(@Valid @RequestBody WalletDto dto) {
         log.info("POST pi/v1/wallet/ save - {}", dto);
         return walletService.save(dto);
@@ -30,7 +32,7 @@ public class WalletController {
 
     @GetMapping("/wallets/{walletId}")
     @ResponseStatus(HttpStatus.OK)
-    public WalletDto getById(@PathVariable Long walletId) {
+    public WalletDto getById(@PathVariable UUID walletId) {
         log.info("GET pi/v1/wallets/{} - getById", walletId);
         return walletService.getById(walletId);
     }

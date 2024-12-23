@@ -5,38 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9715f97-ab5d-474f-96c8-2f3cd302e714" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/javacode/WalletApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/javacode/error/ErrorHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/javacode/error/ErrorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/javacode/error/InsufficientFundsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/javacode/error/NotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/javacode/error/ValidationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/javacode/wallet/Wallet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/javacode/wallet/WalletController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/javacode/wallet/WalletDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/javacode/wallet/WalletMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/javacode/wallet/WalletRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/javacode/wallet/WalletService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/javacode/wallet/WalletServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/javacode/wallet/WalletType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/changeset/create-wallet-table.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changelog-master.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/javacode/WalletAppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/javacode/wallet/WalletControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/javacode/wallet/WalletServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javacode/wallet/Wallet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javacode/wallet/Wallet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javacode/wallet/WalletController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javacode/wallet/WalletController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javacode/wallet/WalletDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javacode/wallet/WalletDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javacode/wallet/WalletRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javacode/wallet/WalletRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javacode/wallet/WalletService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javacode/wallet/WalletService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javacode/wallet/WalletServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javacode/wallet/WalletServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/javacode/wallet/WalletControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/javacode/wallet/WalletControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,13 +33,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -74,6 +45,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.MainServerApp.executor": "Run",
+    "JUnit.All in test_task.executor": "Coverage",
+    "JUnit.WalletControllerTest.executor": "Run",
+    "JUnit.WalletControllerTest.getWalletById_whenInvoked_thenStatusOkAndReturnWallet.executor": "Run",
     "Maven.test_task [install].executor": "Run",
     "Maven.test_task [package].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -99,7 +73,7 @@
       <recent name="C:\Users\leort\IdeaProjects\test_task\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.All in test_task">
     <configuration name="MainServerApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="javacode.error.MainServerApp" />
       <module name="test_task" />
@@ -113,8 +87,50 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All in test_task" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test_task" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WalletControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test_task" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javacode.wallet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="javacode.wallet" />
+      <option name="MAIN_CLASS_NAME" value="javacode.wallet.WalletControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WalletControllerTest.getWalletById_whenInvoked_thenStatusOkAndReturnWallet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test_task" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javacode.wallet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="javacode.wallet" />
+      <option name="MAIN_CLASS_NAME" value="javacode.wallet.WalletControllerTest" />
+      <option name="METHOD_NAME" value="getWalletById_whenInvoked_thenStatusOkAndReturnWallet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in test_task" />
+        <item itemvalue="JUnit.WalletControllerTest" />
+        <item itemvalue="JUnit.WalletControllerTest.getWalletById_whenInvoked_thenStatusOkAndReturnWallet" />
         <item itemvalue="Application.MainServerApp" />
       </list>
     </recent_temporary>
@@ -129,5 +145,8 @@
       <updated>1734878964867</updated>
     </task>
     <servers />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/test_task$All_in_test_task.ic" NAME="All in test_task Coverage Results" MODIFIED="1734961312548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

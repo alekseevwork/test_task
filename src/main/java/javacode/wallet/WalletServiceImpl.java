@@ -1,11 +1,12 @@
 package javacode.wallet;
 
-import jakarta.validation.ValidationException;
 import lombok.Data;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import javacode.error.InsufficientFundsException;
 import javacode.error.NotFoundException;
+
+import java.util.UUID;
 
 @Service
 @Data
@@ -17,13 +18,8 @@ public class WalletServiceImpl implements WalletService {
     @Override
     @Transactional
     public WalletDto save(WalletDto dto) {
-        if (dto.walledId() == null) {
-            throw new ValidationException("Wallet id is null.");
-        }
         Wallet wallet = walletRepository.findById(dto.walledId())
-                .orElseThrow(() -> new NotFoundException(
-                        String.format("Wallet by id = %d not found.", dto.walledId()))
-                );
+                .orElseThrow(() -> new NotFoundException("Wallet by id = " + dto.walledId() + " not found."));
         switch (dto.walletType()) {
             case DEPOSIT -> wallet.setAmount(wallet.getAmount() + dto.amount());
             case WITHDRAW -> wallet.setAmount(wallet.getAmount() - dto.amount());
@@ -36,11 +32,9 @@ public class WalletServiceImpl implements WalletService {
     }
 
     @Override
-    public WalletDto getById(long walletId) {
+    public WalletDto getById(UUID walletId) {
         Wallet wallet = walletRepository.findById(walletId)
-                .orElseThrow(() -> new NotFoundException(
-                        String.format("Wallet by id = %d not found.", walletId))
-                );
+                .orElseThrow(() -> new NotFoundException("Wallet by id = " + walletId + " not found."));
         return WalletMapper.toDto(wallet);
     }
 }

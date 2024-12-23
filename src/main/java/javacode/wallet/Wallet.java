@@ -8,14 +8,16 @@ import jakarta.validation.constraints.NotNull;
 import lombok.Builder;
 import lombok.Data;
 
+import java.util.UUID;
+
 @Data
 @Entity
 @Builder
 public class Wallet {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private final Long id;
+    @GeneratedValue(strategy = GenerationType.UUID)
+    private final UUID id;
 
     @NotNull
     private int amount;
