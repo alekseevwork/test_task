@@ -6,12 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e9715f97-ab5d-474f-96c8-2f3cd302e714" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/javacode/wallet/Wallet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javacode/wallet/Wallet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/javacode/wallet/WalletRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javacode/wallet/WalletRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/javacode/wallet/WalletServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javacode/wallet/WalletServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/changelog/changeset/create-wallet-table.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/changeset/create-wallet-table.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/javacode/wallet/WalletControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/javacode/wallet/WalletControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/javacode/wallet/WalletServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/javacode/wallet/WalletServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changelog-master.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changelog-master.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
